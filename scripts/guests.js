@@ -14,7 +14,7 @@
     The foreign key will have to be added as state data for checks in the event listeners to come. 
 */
 
-import { getGuests } from "database.js";
+import { getGuests } from "./database.js";
 
 const guests = getGuests()
 
@@ -32,4 +32,4 @@ export const guestsHTML = () => {
     return html
 }
 
-// This function will be exported to the main module when it is created.
+// This function will be exported to the main module.
