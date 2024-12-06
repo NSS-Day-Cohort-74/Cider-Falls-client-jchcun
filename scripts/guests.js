@@ -24,7 +24,7 @@ export const guestsHTML = () => {
     for (const guest of guests) {
         html += `<li data-type="guest" 
                      data-areaid="${guest.areaId}">
-                     ${guest.name}
+                     ${guest.firstName} ${guest.lastName}
                 </li>`
     }
     html += `</ul>`
