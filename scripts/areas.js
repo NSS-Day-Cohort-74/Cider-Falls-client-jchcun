@@ -4,6 +4,7 @@ const serviceAreas = getServiceAreas()
 const areas = getAreas()
 const services = getServices()
 
+
 //Create a function whose responsibility is to find the area that matches the areaId of the ServiceAreas object
 /*const findArea = (serviceArea, allAreas) => {
     let areaName = null
