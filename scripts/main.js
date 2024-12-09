@@ -1,8 +1,13 @@
-import { guestsHTML } from "./guests.js"
-import { } from "./areas.js"
-import { } from "./service.js"
+import { guestsHTML } from "./guests.js";
+import {} from "./areas.js";
+import {} from "./service.js";
+import { servicesHTML, serviceListClickEvent } from "./services.js";
 
-const mainContainer = document.querySelector("#container")
+// rendering services and attaching the event listener for the servicelist clickEvent
+document.querySelector("#main-content").innerHTML += servicesHTML();
+serviceListClickEvent();
+
+const mainContainer = document.querySelector("#container");
 
 const applicationHTML = `
     <article class="details">
@@ -18,6 +23,6 @@ const applicationHTML = `
             ${guestsHTML()}
         </section>
     </article>
-    `
+    `;
 
-    mainContainer.innerHTML = applicationHTML
+mainContainer.innerHTML = applicationHTML;
