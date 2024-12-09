@@ -3,8 +3,8 @@ import { guestsHTML } from "./guests.js";
 import { areasHTML } from "./areas.js";
 
 // rendering services and attaching the event listener for the servicelist clickEvent
-document.querySelector("#container").innerHTML += servicesHTML();
-serviceListClickEvent();
+//document.querySelector("#container").innerHTML += servicesHTML();
+//serviceListClickEvent();
 
 const mainContainer = document.querySelector("#container");
 
