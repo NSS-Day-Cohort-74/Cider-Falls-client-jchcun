@@ -1,4 +1,4 @@
-import { getserviceAreas } from "./database.js"
+import { getServiceAreas } from "./database.js"
 
 //turn getServiceAreas into an array
 //turn getServices into an array
@@ -7,5 +7,9 @@ import { getserviceAreas } from "./database.js"
 //create a function that finds the areas matched based on the serviceArea object
 //must return the array of areas with the specific service
 
-//export
+//export array of arrays to be accessed by event listner.
+
+
+const serviceAreas = getServiceAreas()
+const 
 
