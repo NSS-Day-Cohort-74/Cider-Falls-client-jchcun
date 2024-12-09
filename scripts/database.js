@@ -28,7 +28,7 @@ const database = {
            {
            id: 1,
            name: "Chamfort River",
-           location: "NorthEast"
+           location: "Northeast"
     },
            {
            id: 2,
@@ -53,7 +53,7 @@ const database = {
            {
            id: 6,
            name: "Pine Bluffs Trails",
-           location: "SouthEast" 
+           location: "Southeast" 
     }],
     services: [
            {
@@ -74,7 +74,7 @@ const database = {
     },
            {
            id: 5,
-           name: "canoeing"
+           name: "Canoeing"
     },
           {
            id: 6,
@@ -98,7 +98,7 @@ const database = {
     },
            {
            id: 11,
-           name: "Restauarant"
+           name: "Restaurant"
     },
            {
            id: 12,
@@ -106,7 +106,7 @@ const database = {
     },
            {
            id: 13,
-           name: "Childrens Play Area"
+           name: "Children's Play Area"
     },
            {
            id: 14,
@@ -123,107 +123,107 @@ const database = {
        areasId: 6
     },
            {
-       id: 1,
-       servicesId: 3,
-       areasId: 6
-    },
-           {
-       id: 1,
-       servicesId: 3,
-       areasId: 6
-    },
-           {
        id: 2,
+       servicesId: 3,
+       areasId: 6
+    },
+           {
+       id: 3,
+       servicesId: 3,
+       areasId: 6
+    },
+           {
+       id: 4,
        servicesId: 8,
        areasId: 5
     },
            {
-       id: 2,
+       id: 5,
        servicesId: 9,
        areasId: 5
     },
            {
-       id: 2,
+       id: 6,
        servicesId: 10,
        areasId: 5
     },
            {
-       id: 2,
+       id: 7,
        servicesId: 13,
        areasId: 5
     },
            {
-       id: 2,
+       id: 8,
        servicesId: 14,
        areasId: 5
     },
            {
-       id: 3,
+       id: 9,
        servicesId: 1,
        areasId: 4
     },
            {
-       id: 3,
+       id: 10,
        servicesId: 6,
        areasId: 4
     },
            {
-       id: 4,
+       id: 11,
        servicesId: 15,
        areasId: 3
     },
            {
-       id: 4,
+       id: 12,
        servicesId: 11,
        areasId: 3
     },
            {
-       id: 4,
+       id: 13,
        servicesId: 8,
        areasId: 3
     },
            {
-       id: 4,
+       id: 14,
        servicesId: 9,
        areasId: 3
     },
            {
-       id: 4,
+       id: 15,
        servicesId: 10,
        areasId: 3
     },
            {
-       id: 4,
+       id: 16,
        servicesId: 7,
        areasId: 3
     },
            {
-       id: 5,
+       id: 17,
        servicesId: 1,
        areasId: 2
     },
            {
-       id: 5,
+       id: 18,
        servicesId: 2,
        areasId: 2
     },
            {
-       id: 5,
+       id: 19,
        servicesId: 7,
        areasId: 2
     },
            {
-       id: 6,
+       id: 20,
        servicesId: 4,
        areasId: 1
     },
            {
-       id: 6,
+       id: 21,
        servicesId: 5,
        areasId: 1
     },
            {
-       id: 6,
+       id: 22,
        servicesId: 6,
        areasId: 1
     }]
