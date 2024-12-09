@@ -15,7 +15,7 @@ const applicationHTML = `
         </section>
         <section class="detail--locations cards list details_parks">
             <h2>Destinations</h2>
-            ${areasPlaceholder}
+            ${ areasHTML() }
         </section>
         <section class="detail--guest list">
             <h2>Guests</h2>
