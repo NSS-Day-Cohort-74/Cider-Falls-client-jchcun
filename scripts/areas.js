@@ -30,6 +30,23 @@ const services = getServices()
     return serviceName
 }*/
 
+const findServices = (areaObject, allServicesAreas) => {
+    let serviceNamesList = []
+    for (const serviceArea of allServicesAreas) {
+        
+        if(areaObject.id === parseInt(serviceArea.areasId)){
+            for (const service of services) {
+                if (service.id === parseInt(serviceArea.servicesId)){
+                    serviceNamesList.push(service.name)
+                }
+                
+            }
+            
+        }
+    }
+    return serviceNamesList
+}
+
 
 
 
@@ -64,7 +81,7 @@ export const areasHTML = () => {
     let html ="<ul>"
 
     for (const area of areas) {
-        const servicesList = findServices(area, services)
+        const servicesList = findServices(area, serviceAreas)
         
         html +=  `
                 <li 
