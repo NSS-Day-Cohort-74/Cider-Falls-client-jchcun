@@ -1,4 +1,4 @@
-import { getAreas, getGuests, getServiceAreas, getServices } from "./database"
+import { getAreas, getGuests, getServiceAreas, getServices } from "./database.js"
 
 const serviceAreas = getServiceAreas()
 const areas = getAreas()
@@ -50,6 +50,9 @@ export const areasHTML = () => {
                 </li> 
         `
     }
+    html += "</ul>"
+
+    return html
 }
 
 
