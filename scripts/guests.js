@@ -35,4 +35,5 @@ export const guestsHTML = () => {
 // This function will be exported to the main module.
 /*
     Comment to test pull request
+    Removed serviceArea file
 */
