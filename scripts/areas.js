@@ -29,3 +29,27 @@ const findServices = (serviceArea, allServices) => {
     }
     return serviceName
 }
+
+
+//export a function that loops through each area and calls the find area and the find services functions to give the name and the list of services needed
+
+export const areasHTML = () => {
+    let html = "<ul>"
+
+    for (const serviceArea of serviceAreas) {
+        const destination = findArea(serviceArea, areas)
+        const services = findServices(serviceArea, services)
+
+        html += `
+                <li 
+                data-type="area"
+                data-areaId="${serviceArea.areasId}"
+                data-serviceId="${serviceArea.servicesId}">
+                    <h3 class="destination name">${destination.name}</h3>
+                    <p> Services Available: ${services} </p>
+                </li> 
+        `
+    }
+}
+
+
