@@ -1,4 +1,4 @@
-import { } from "./guests.js"
+import { guestsHTML } from "./guests.js"
 import { } from "./areas.js"
 import { } from "./service.js"
 
@@ -13,9 +13,11 @@ const applicationHTML = `
             <h2>Destinations</h2>
             ${areasPlaceholder}
         </section>
-        <section class="detial--guest list">
+        <section class="detail--guest list">
             <h2>Guests</h2>
-            ${guestsPlaceholder}
+            ${guestsHTML()}
         </section>
     </article>
     `
+
+    mainContainer.innerHTML = applicationHTML
