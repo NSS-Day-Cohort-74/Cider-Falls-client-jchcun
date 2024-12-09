@@ -39,7 +39,7 @@ const findServices = (areaObject, allServicesAreas) => {
             
         }
     }
-    return serviceNamesList
+    return serviceNamesList.join(", ")
 }
 
 export const areasHTML = () => {
