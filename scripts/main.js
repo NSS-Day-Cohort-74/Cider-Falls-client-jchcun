@@ -1,7 +1,6 @@
-import { guestsHTML } from "./guests.js";
-import {} from "./areas.js";
-import {} from "./service.js";
 import { servicesHTML, serviceListClickEvent } from "./services.js";
+import { guestsHTML } from "./guests.js";
+import { areasHTML } from "./areas.js";
 
 // rendering services and attaching the event listener for the servicelist clickEvent
 document.querySelector("#main-content").innerHTML += servicesHTML();
@@ -12,7 +11,7 @@ const mainContainer = document.querySelector("#container");
 const applicationHTML = `
     <article class="details">
         <section class="details_services">
-            <h2>Services Available:${servicesPlaceholder}</h2>
+            <h2>Services Available:${servicesHTML()}</h2>
         </section>
         <section class="detail--locations cards list details_parks">
             <h2>Destinations</h2>
