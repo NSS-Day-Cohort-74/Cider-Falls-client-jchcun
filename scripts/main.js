@@ -1,5 +1,5 @@
 import { guestsHTML } from "./guests.js"
-import { } from "./areas.js"
+import { areasHTML } from "./areas.js"
 import { } from "./service.js"
 
 const mainContainer = document.querySelector("#container")
@@ -11,7 +11,7 @@ const applicationHTML = `
         </section>
         <section class="detail--locations cards list details_parks">
             <h2>Destinations</h2>
-            ${areasPlaceholder}
+            ${areasHTML}
         </section>
         <section class="detail--guest list">
             <h2>Guests</h2>
@@ -20,4 +20,4 @@ const applicationHTML = `
     </article>
     `
 
-    mainContainer.innerHTML = applicationHTML
+mainContainer.innerHTML = applicationHTML
