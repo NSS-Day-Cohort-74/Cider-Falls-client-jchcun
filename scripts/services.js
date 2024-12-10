@@ -7,7 +7,7 @@ const findAreasByService = (serviceId) => {
   // first I filtered the serviceAreas for matching serviceIds, and mapped those into a new array of area objects
   return serviceAreas
     .filter((sa) => sa.servicesId === serviceId)
-    .map((sa) => areas.find((area) => area.id === sa.areaId));
+    .map((sa) => areas.find((area) => area.id === sa.areasId));
 };
 
 // here I create the html strings
@@ -32,9 +32,9 @@ export const servicesHTML = () => {
 
 // here I create the event listener for the service list clickEvent
 export const serviceListClickEvent = () => {
-  const serviceList = document.querySelector("#service-list");
+  //const serviceList = document.querySelector("#service-list");
 
-  serviceList.addEventListener("click", (event) => {
+  document.addEventListener("click", (event) => {
     const serviceId = parseInt(event.target.dataset.serviceId);
 
     if (serviceId) {
