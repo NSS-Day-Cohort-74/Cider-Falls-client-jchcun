@@ -15,7 +15,6 @@ export const servicesHTML = () => {
   const services = getServices();
   const servicesHtml = `
         <section id="services">
-            <h2>Available Park Services</h2>
             <ul id="service-list">
                 ${services
                   .map(

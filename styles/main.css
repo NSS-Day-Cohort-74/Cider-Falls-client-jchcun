@@ -1,0 +1,69 @@
+article {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 2fr; 
+    overflow: hidden
+}
+
+.guestlist {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#logo {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    width: 100px;
+    height: 50px;
+}
+
+#service-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100px;
+}
+
+body{
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+.destinationlist ul{
+    list-style: none;
+}
+
+#destinationId {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    height: 125px;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    gap: 20px;
+    background-color: wheat;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: wheat
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 65px;
+}
+
