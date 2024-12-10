@@ -43,7 +43,7 @@ const findServices = (areaObject, allServicesAreas) => {
 }
 
 export const areasHTML = () => {
-    let html ="<ul>"
+    let html =`<ul id="destinationId">`
 
     for (const area of areas) {
         const servicesList = findServices(area, serviceAreas)
@@ -51,7 +51,8 @@ export const areasHTML = () => {
         html +=  `
                 <li 
                 data-type="area"
-                data-areaId="${area.id}">
+                data-areaId="${area.id}"
+                class="card">
                     <h3 class="destination name">${area.name}</h3>
                     <p> Services Available: ${servicesList} </p>
                 </li> 
